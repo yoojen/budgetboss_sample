@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <link rel="stylesheet" href="style_2.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script defer src="index.js"></script>
+    <script defer src="index_2.js"></script>
+
+</head>
+
+<body>
+    <section class="container">
+        <div class="controls">
+            <div class="open-btn">
+                <img src="./downarrow1.png" alt="">
+            </div>
+            <div class="close-btn">
+                <img src="./close_button_normal.png" alt="">
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="logo">
+                <img src="./budget.png" alt="">
+                <p>BudgetBoss</p>
+            </div>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="sv.html">Dashboard</a></li>
+                    <li><a href="transaction.html">Transactions</a></li>
+                    <li><a href="budgeting.html">Budgetinng</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="expenses">
+                <h1 id="add-holder">
+                    MAKE FUTURE PLAN
+                    <button id="add-many" onclick="addmany()">Add Multiple</button>
+                </h1>
+                <form action="" method="POST" id="onebyone">
+                    <div class="single-item">
+                        <label for="">Expense</label>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="single-item">
+                        <label for="">Amount</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="single-item">
+                        <label for="" style="margin-bottom: 5px;">Select Category</label>
+                        <div class="wrapper">
+                            <select name="" id="">
+                                <option value="">select category</option>
+                                <option value="">Transport</option>
+                                <option value="">Shopping</option>
+                            </select>
+
+                            <select name="" id="">
+                                <option value="">select sub-category</option>
+                                <option value="">Bus</option>
+                                <option value="">Sub-way</option>
+                                <option value="">Taxi</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+
+                    <div class="single-item">
+                        <button type="submit">Add To List</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="table-expense">
+                <div class="recent">
+                    <form action="">
+                        <table>
+                            <tr>
+                                <th>expense</th>
+                                <th>amount</th>
+                                <th>category</th>
+                                <th>description</th>
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" name="expense" id="" required></td>
+                                <td><input type="text" name="amount" id="" required></td>
+                                <td>
+                                    <select name="category" id="" style="width: 100%;" required>
+                                        <option value="">select category</option>
+                                        <option value="">Transport</option>
+                                        <option value="">Shopping</option>
+                                    </select>
+                                    <select name="sub-category" id="" style="margin-top: 3px; width: 100px;" required>
+                                        <option value="">select sub-category</option>
+                                        <option value="">Bus</option>
+                                        <option value="">Sub-way</option>
+                                        <option value="">Taxi</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="1"></textarea>
+                            </tr>
+
+                        </table>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="list-items">
+            <div class="items">
+                <table>
+                    <tr>
+                        <th>Activity</th>
+                        <th>estimated spending</th>
+                        <th>category</th>
+                        <th>action</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" name="expense" id="" required></td>
+                        <td><input type="text" name="amount" id="" required></td>
+                        <td>
+                            <select name="category" id="" style="width: 100%;" required>
+                                <option value="">select category</option>
+                                <option value="">Transport</option>
+                                <option value="">Shopping</option>
+                            </select>
+                            <select name="sub-category" id="" style="margin-top: 3px; width: 100px;" required>
+                                <option value="">select sub-category</option>
+                                <option value="">Bus</option>
+                                <option value="">Sub-way</option>
+                                <option value="">Taxi</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+
+                </table>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+    </script>
+</body>
+
+</html>
